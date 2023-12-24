@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.7.0" />
+    <PackageReference Include="Tonga" Version="0.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="ZiZZi" Version="0.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Experiments\" />
+    <None Remove="Quiddity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Experiments\" />
+    <Folder Include="Quiddity\" />
+  </ItemGroup>
+</Project>

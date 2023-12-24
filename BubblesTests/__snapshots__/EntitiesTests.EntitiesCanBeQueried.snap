@@ -1,0 +1,20 @@
+﻿{
+  "data": {
+    "TVShows": [
+      {
+        "name": "Killing Eve",
+        "author": {
+          "firstname": "Luke",
+          "lastname": "Jennings"
+        }
+      },
+      {
+        "name": "Zini",
+        "author": {
+          "firstname": "Werner",
+          "lastname": "Schulze-Erdel"
+        }
+      }
+    ]
+  }
+}
