@@ -1,4 +1,4 @@
-﻿namespace Existence.Directive
+﻿namespace Quiddity.Directive
 {
     /// <summary>
     /// A simple directive which applies given mutations of they match this directives name.

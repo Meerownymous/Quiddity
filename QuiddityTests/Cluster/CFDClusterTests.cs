@@ -1,9 +1,8 @@
 ﻿using System;
-using Existence.Quiddity;
 using Tonga.Scalar;
 using Xunit;
 
-namespace Existence.Cluster
+namespace Quiddity.Cluster
 {
 	public sealed class CFDClusterTests
 	{

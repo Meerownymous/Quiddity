@@ -1,7 +1,7 @@
 ﻿using ZiZZi;
 using ZiZZi.Matter.Object;
 
-namespace Existence.Quiddity
+namespace Quiddity.Aspect
 {
 	/// <summary>
 	/// A simple aspect whose information is linked to a name.

@@ -1,11 +1,12 @@
-﻿using Existence.Directive;
-using Existence.Mutation;
+﻿using Quiddity.Aspect;
+using Quiddity.Directive;
+using Quiddity.Mutation;
 using Tonga.Enumerable;
 using Xunit;
 using ZiZZi;
 using ZiZZi.Matter.Object;
 
-namespace Existence.Quiddity.Tests
+namespace Quiddity.Tests
 {
 	public sealed class SimpleQuiddityTests
 	{
@@ -16,7 +17,7 @@ namespace Existence.Quiddity.Tests
                 "Success-Avenue",
                 new SimpleQuiddity("Testerius",
 					new SimpleAspect("Location",
-						new ZiBlock("Something",
+						new ZiBlock(
 							new ZiProp("Street", "Success-Avenue")
 						)
 					)

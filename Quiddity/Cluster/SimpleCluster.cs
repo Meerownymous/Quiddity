@@ -4,7 +4,7 @@ using Tonga.Collection;
 using Tonga.Enumerable;
 using Tonga.Map;
 
-namespace Existence.Cluster
+namespace Quiddity.Cluster
 {
     /// <summary>
     /// A simple cluster in memory, containing multiple quiddities.

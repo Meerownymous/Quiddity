@@ -1,5 +1,6 @@
 ﻿using System;
-namespace Existence.Cluster
+
+namespace Quiddity.Cluster
 {
 	/// <summary>
 	/// A cluster which consists of multiple quiddities.

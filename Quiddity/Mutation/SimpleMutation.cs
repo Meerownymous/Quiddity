@@ -1,6 +1,6 @@
 ﻿using ZiZZi;
 
-namespace Existence.Mutation
+namespace Quiddity.Mutation
 {
 	/// <summary>
 	/// A simple named mutation.

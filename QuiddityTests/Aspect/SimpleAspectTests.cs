@@ -1,8 +1,8 @@
-﻿using Existence.Quiddity;
+﻿using Quiddity;
 using Xunit;
 using ZiZZi;
 
-namespace Existence.Aspect.Tests
+namespace Quiddity.Aspect.Tests
 {
 	public sealed class SimpleAspectTests
 	{

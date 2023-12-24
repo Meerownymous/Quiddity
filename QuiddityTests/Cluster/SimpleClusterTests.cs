@@ -1,6 +1,6 @@
-﻿using System;
-using Existence.Cluster;
-using Existence.Quiddity;
+﻿using Quiddity;
+using Quiddity.Aspect;
+using Quiddity.Cluster;
 using Xunit;
 using ZiZZi;
 

@@ -1,8 +1,9 @@
-﻿using Xunit;
+﻿using Quiddity.Mutation;
+using Xunit;
 using ZiZZi;
 using ZiZZi.Matter.Object;
 
-namespace Existence.Mutation.Tests
+namespace Quiddity.Mutation.Tests
 {
 	public sealed class SimpleMutationTests
 	{

@@ -1,8 +1,9 @@
-﻿using Tonga;
+﻿using Quiddity;
+using Tonga;
 using Tonga.Enumerable;
 using Tonga.Map;
 
-namespace Existence.Quiddity
+namespace Quiddity
 {
     /// <summary>
     /// A simple quiddity which can deliver aspects and accepts mutations.

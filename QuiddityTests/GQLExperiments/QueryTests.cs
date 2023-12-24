@@ -187,7 +187,7 @@ namespace Quiddity.GQLExperiments.Tests
                         .AddType<BookType>()
                         .AddType<AddedPayloadType>()
                         //.AddQueryType<Query>()
-                        .AddMutationType<Mutation>()
+                        //.AddMutationType<Mutation>()
                         .ExecuteRequestAsync("""mutation { addBook( title : "Elegance" ){ bla item } }""")
                 )
                 .ToJson();

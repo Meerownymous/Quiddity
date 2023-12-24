@@ -1,11 +1,11 @@
-﻿using Existence.Directive;
+﻿using Quiddity.Directive;
 using Tonga;
 using Tonga.Enumerable;
 using Tonga.Map;
 using ZiZZi;
 using ZiZZi.Matter.Object;
 
-namespace Existence.Cluster
+namespace Quiddity.Cluster
 {
     /// <summary>
     /// Cluster which can create, filter and mutate the collection.
