@@ -12,7 +12,7 @@ using ZiZZi;
 using ZiZZi.Matter.Object;
 using Tonga.Enumerable;
 
-namespace HotChocolatePlayTests
+namespace Quiddity.GQLExperiments.Tests
 {
 	public class QueryTests
 	{

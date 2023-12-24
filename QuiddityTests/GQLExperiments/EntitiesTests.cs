@@ -6,7 +6,7 @@ using Snapshooter.Xunit;
 using Xunit;
 using ZiZZi;
 
-namespace HotChocolatePlayTests
+namespace Quiddity.GQLExperiments.Tests
 {
 	public sealed class EntityTests
 	{

@@ -2,7 +2,7 @@
 using HotChocolate.Execution;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HotChocolatePlayTests
+namespace Quiddity.GQLExperiments.Tests
 {
     public sealed class Graph
     {

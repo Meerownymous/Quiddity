@@ -4,7 +4,7 @@ using HotChocolate.Execution;
 using HotChocolatePlay;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HotChocolatePlayTests
+namespace Quiddity.GQLExperiments.Tests
 {
     //https://www.youtube.com/watch?v=Nf7nX2H_iiM
     public static class TestServices

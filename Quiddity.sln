@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiddity", "Quiddity\Quiddity.csproj", "{5E9EB4D7-5C01-490F-9931-B93C2092A833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiddityTests", "QuiddityTests\QuiddityTests.csproj", "{CF3BE0DE-2CB5-4044-AD9A-038D55EEB633}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E9EB4D7-5C01-490F-9931-B93C2092A833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9EB4D7-5C01-490F-9931-B93C2092A833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9EB4D7-5C01-490F-9931-B93C2092A833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9EB4D7-5C01-490F-9931-B93C2092A833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3BE0DE-2CB5-4044-AD9A-038D55EEB633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3BE0DE-2CB5-4044-AD9A-038D55EEB633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3BE0DE-2CB5-4044-AD9A-038D55EEB633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3BE0DE-2CB5-4044-AD9A-038D55EEB633}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A23C70A9-01CA-43E8-9CC9-B50ED7A5A625}
+	EndGlobalSection
+EndGlobal

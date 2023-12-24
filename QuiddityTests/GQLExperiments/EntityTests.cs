@@ -7,7 +7,7 @@ using Tonga.List;
 using Xunit;
 using ZiZZi;
 
-namespace HotChocolatePlayTests
+namespace Quiddity.GQLExperiments.Tests
 {
 	public sealed class EntitiesTests
 	{
