@@ -77,7 +77,7 @@ var user =
     new SimpleAspect("Location",
       new ZiBlock(
         new ZiProp("LastUpdate", () => LocationServices.LastUpdate),  
-        new ZiProp("Coordinates", () => LocationServices.GetCordinates().ToString()),
+        new ZiProp("Coordinates", () => LocationServices.GetCoordinates().ToString()),
         new ZiProp("City", () => LocationServices.GetCity())
       )
     )
