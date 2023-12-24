@@ -22,7 +22,7 @@ With quiddity, you can declare an entity in your software like this:
 ```csharp
 var user =
   new SimpleQuiddity("Anna", 
-    new SimpleAspect("Location",  //Define one of multiple aspects
+    new SimpleAspect("Location",  //Define one or multiple aspects
       new ZiBlock(                //Declare the information of this aspect
         new ZiProp("Street", "Success-Avenue"),
         new ZiProp("City", "Greentown")
