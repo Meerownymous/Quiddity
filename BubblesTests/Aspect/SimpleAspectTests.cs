@@ -1,9 +1,8 @@
-﻿using System;
-using Existence.Quiddity;
+﻿using Existence.Quiddity;
 using Xunit;
 using ZiZZi;
 
-namespace ExistenceTests.Quiddity
+namespace Existence.Aspect.Tests
 {
 	public sealed class SimpleAspectTests
 	{
@@ -24,9 +23,8 @@ namespace ExistenceTests.Quiddity
         {
             Assert.Equal(
                 "Success",
-                new SimpleAspect(
-					"Success",
-					new ZiBlock("Unit",
+                new SimpleAspect("Testing",
+					new ZiBlock("UnitTest",
 						new ZiProp("Result", "Success")
 					)
                 )

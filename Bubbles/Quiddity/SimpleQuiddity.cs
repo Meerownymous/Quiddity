@@ -17,6 +17,14 @@ namespace Existence.Quiddity
         /// A simple quiddity which can deliver aspects and accepts mutations.
         /// </summary>
         public SimpleQuiddity(string name, params IAspect[] aspects) : this(
+            name, AsEnumerable._(aspects)
+        )
+        { }
+
+        /// <summary>
+        /// A simple quiddity which can deliver aspects and accepts mutations.
+        /// </summary>
+        public SimpleQuiddity(string name, IEnumerable<IAspect> aspects) : this(
             name, AsEnumerable._(aspects), None._<IDirective>()
         )
         { }

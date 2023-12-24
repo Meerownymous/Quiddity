@@ -1,0 +1,12 @@
+﻿{
+  "data": {
+    "zizzi": {
+      "name": "Zini",
+      "author": {
+        "id": 789,
+        "firstname": "Werner",
+        "lastname": "Schulze-Erdel"
+      }
+    }
+  }
+}

@@ -19,6 +19,7 @@
     <None Remove="Directive\" />
     <None Remove="Mutation\" />
     <None Remove="__Experiments\" />
+    <None Remove="Cluster\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Quiddity\" />
@@ -26,5 +27,6 @@
     <Folder Include="Directive\" />
     <Folder Include="Mutation\" />
     <Folder Include="__Experiments\" />
+    <Folder Include="Cluster\" />
   </ItemGroup>
 </Project>

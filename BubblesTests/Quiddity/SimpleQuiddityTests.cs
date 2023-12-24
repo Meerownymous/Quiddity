@@ -1,5 +1,9 @@
-﻿using Xunit;
+﻿using Existence.Directive;
+using Existence.Mutation;
+using Tonga.Enumerable;
+using Xunit;
 using ZiZZi;
+using ZiZZi.Matter.Object;
 
 namespace Existence.Quiddity.Tests
 {
@@ -22,5 +26,41 @@ namespace Existence.Quiddity.Tests
 				.Street
 			);
 		}
-	}
+
+        [Fact]
+        public void DigestsMutations()
+        {
+			var memory = new Dictionary<string, string>();
+			memory["Street"] = "Fail-Avenue";
+
+			new SimpleQuiddity("Testerius",
+				AsEnumerable._(
+					new SimpleAspect("Location",
+						new ZiBlock("Something",
+							new ZiProp("Street", () => memory["Street"])
+						)
+					)
+				),
+				AsEnumerable._(
+					new SimpleDirective("Relocate",
+						mutation =>
+							memory["Street"] =
+								mutation
+									.Information()
+									.Form(
+										ObjectMatter.Fill(new { Target = String.Empty })
+									).Target
+					)
+				)
+			).Mutate(
+				new SimpleMutation("Relocate",
+					new ZiBlock("Movement",
+						new ZiProp("Target", "Success-Avenue")
+					)
+				)
+			);
+
+			Assert.Equal("Success-Avenue", memory["Street"]);
+        }
+    }
 }
