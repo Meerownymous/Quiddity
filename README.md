@@ -83,7 +83,7 @@ var user =
     )
   );
 
-```csharp
+
 var location =
   user.Aspect("Location")
     .Into(new { LastUpdate = DateTime.MinValue } ); //Coordinates and City will not be retrieved in this object fill.
