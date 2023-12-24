@@ -36,7 +36,13 @@ Once declared, you can access the entity in your usecases. If you need informati
 ```csharp
 var location =
   user.Aspect("Location")
-    .Into(new { City = "", Street = "" } ); //define an anonymous object and Quiddity will fill the properties as they are declared.
+    .Into(new { City = "", Street = "" } ); //define an anonymous object and Quiddity will fill the properties from the declaration.
+
+Console.WriteLine("Anna is in " +
+  user.Aspect("Location")
+    .Into(new { City = "" } )
+    .City
+);
 ```
 
 While the example above uses static data in the declaration, the real advantage using quiddity is when you declare the data flow from dynamic sources instead:
