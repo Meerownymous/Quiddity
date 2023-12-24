@@ -1,31 +1,32 @@
 ﻿using Tonga;
 using Tonga.Enumerable;
 using Tonga.Map;
-using ZiZZi;
 
 namespace Existence.Quiddity
 {
     /// <summary>
-    /// A simple quiddity which can deliver aspects.
+    /// A simple quiddity which can deliver aspects and accepts mutations.
     /// </summary>
     public sealed class SimpleQuiddity : IQuiddity
 	{
-        private readonly IMap<string, IAspect> aspects;
         private readonly string name;
+        private readonly IMap<string, IAspect> aspects;
+        private readonly IMap<string, IDirective> directives;
 
         /// <summary>
-        /// A simple quiddity which can deliver aspects.
+        /// A simple quiddity which can deliver aspects and accepts mutations.
         /// </summary>
         public SimpleQuiddity(string name, params IAspect[] aspects) : this(
-            name, AsEnumerable._(aspects)
+            name, AsEnumerable._(aspects), None._<IDirective>()
         )
         { }
 
         /// <summary>
-        /// A simple quiddity which can deliver aspects.
+        /// A simple quiddity which can deliver aspects and accepts mutations.
         /// </summary>
-        public SimpleQuiddity(string name, IEnumerable<IAspect> aspects)
+        public SimpleQuiddity(string name, IEnumerable<IAspect> aspects, IEnumerable<IDirective> directives)
 		{
+            this.name = name;
             this.aspects =
                 AsMap._(
                     Mapped._(
@@ -33,19 +34,24 @@ namespace Existence.Quiddity
                         aspects
                     )
                 );
-            this.name = name;
+            this.directives =
+                AsMap._(
+                    Mapped._(
+                        directive => AsPair._(directive.Name(), directive),
+                        directives
+                    )
+                );
         }
 
         public string Name() => this.name;
 
-        public IAspect Aspect(string focus) => this.aspects[focus];
-
         public ICollection<string> Aspects() => this.aspects.Keys();
 
-        public void Mutate(string aspect)
-        {
-            throw new NotImplementedException();
-        }
+        public IAspect Aspect(string focus) => this.aspects[focus];
+
+        public ICollection<string> Mutations() => this.directives.Keys();
+
+        public void Mutate(IMutation mutation) => this.directives[mutation.Name()].Apply(mutation);
     }
 }
 

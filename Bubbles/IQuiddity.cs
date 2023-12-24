@@ -6,8 +6,11 @@
 	public interface IQuiddity
 	{
 		string Name();
+
 		ICollection<string> Aspects();
 		IAspect Aspect(string name);
-		void Mutate(string aspect);
+
+		ICollection<string> Mutations();
+        void Mutate(IMutation mutation);
 	}
 }

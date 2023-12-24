@@ -18,7 +18,7 @@ namespace HotChocolatePlayTests
                     .AddGraphQLServer()
                     .AddType<QueryDummy>()
                     .AddQueryType(
-                        Entity._(
+                        Catalyst._(
                             "TVShow",
                             new
                             {

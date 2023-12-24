@@ -64,7 +64,7 @@ namespace HotChocolatePlay
         }
     }
 
-    public static class Entity
+    public static class Catalyst
     {
         public static Catalyst<TObject> _<TObject>(
             string name, TObject blueprint, IBlox source, bool lazyFill = false

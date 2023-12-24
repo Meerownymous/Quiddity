@@ -14,11 +14,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Experiments\" />
     <None Remove="Quiddity\" />
+    <None Remove="Aspect\" />
+    <None Remove="Directive\" />
+    <None Remove="Mutation\" />
+    <None Remove="__Experiments\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Experiments\" />
     <Folder Include="Quiddity\" />
+    <Folder Include="Aspect\" />
+    <Folder Include="Directive\" />
+    <Folder Include="Mutation\" />
+    <Folder Include="__Experiments\" />
   </ItemGroup>
 </Project>
