@@ -1,4 +1,6 @@
-# Quiddity is WIP
+# Quiddity Objective
+
+## Quiddity is Alpha WIP
 
 Quiddity is a framework for designing entities in the problem domain area of a software, in terms of Clean Architecture.
 It aims at presenting an alternative DTO and ORM patterns by introducing live aggregating object printers and clever object communitation which minimizes repetition and data transfer.
