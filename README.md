@@ -53,7 +53,7 @@ var user =
   new SimpleQuiddity("Anna", 
     new SimpleAspect("Location",
       new ZiBlock(                
-        new ZiProp("Coordinates", () => LocationServices.GetCordinates().ToString()),
+        new ZiProp("Coordinates", () => LocationServices.GetCoordinates().ToString()),
         new ZiProp("City", () => LocationServices.GetCity())
       )
     )
