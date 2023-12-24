@@ -44,6 +44,7 @@ Console.WriteLine("Anna is in " +
     .City
 );
 ```
+This might look unusual at first, when you are used to common DTO approaches. The advantage of this technique is, that once you have declared your entity, you have a single source from which you slice data in different ways just as you need it. You do not need to define mutiple DTO and services which fill them, instead you declare aspects and tailor them to the minimum necessary directly at the point in your software where you need them.
 
 While the example above uses static data in the declaration, the real advantage using quiddity is when you declare the data flow from dynamic sources instead:
 
